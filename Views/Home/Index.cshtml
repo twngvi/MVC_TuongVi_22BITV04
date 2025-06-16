@@ -1,0 +1,65 @@
+﻿@{
+    ViewData["Title"] = "Trang cá nhân";
+}
+
+<style>
+    body {
+        background-image: url('/images/anhthu1.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .profile-container {
+        max-width: 400px;
+        margin: 40px auto;
+        background: rgba(248, 249, 250, 0.7); 
+        border-radius: 16px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        padding: 32px 24px;
+        backdrop-filter: blur(8px); 
+        -webkit-backdrop-filter: blur(8px); 
+    }
+    .profile-container ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .profile-container li {
+        font-size: 1.1rem;
+        margin-bottom: 16px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #e0e0e0;
+        text-align: left; 
+    }
+    .profile-container li:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+    .profile-container strong {
+        color: #007bff;
+        min-width: 120px;
+        display: inline-block;
+    }
+    .profile-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #343a40;
+        margin-bottom: 24px;
+        letter-spacing: 1px;
+    }
+</style>
+
+<div class="profile-container text-center">
+    <div class="profile-title">Trang cá nhân</div>
+    <ul>
+        <li><strong>Họ và tên:</strong> Trương Tường Vi</li>
+        <li><strong>MSSV:</strong> 2200002438</li>
+        <li><strong>Ngày sinh:</strong> 05/08/2004</li>
+        <li><strong>Email:</strong> 2200002438@nttu.edu.vn</li>
+        <li><strong>Sở thích:</strong> Du lịch</li>
+    </ul>
+</div>

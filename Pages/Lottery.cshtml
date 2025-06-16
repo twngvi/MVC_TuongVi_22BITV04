@@ -1,0 +1,60 @@
+﻿@page
+@model MVC_Week1.Pages.LotteryModel
+@{
+    ViewData["Title"] = "Kết quả xổ số";
+}
+<style>
+    body {
+        background-image: url('/images/anhthu1.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+    .lottery-container {
+        max-width: 400px;
+        margin: 40px auto;
+        background: rgba(255,255,255,0.8);
+        border-radius: 16px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        padding: 32px 24px;
+        text-align: center;
+    }
+    .lottery-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #d35400;
+        margin-bottom: 24px;
+    }
+    .lottery-numbers {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        margin-top: 16px;
+    }
+    .lottery-number {
+        background: #007bff;
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: bold;
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+</style>
+
+<div class="lottery-container">
+    <div class="lottery-title">Kết quả xổ số</div>
+    <div class="lottery-numbers">
+        @foreach (var num in Model.LotteryNumbers)
+        {
+            <div class="lottery-number">@num</div>
+        }
+    </div>
+</div>
